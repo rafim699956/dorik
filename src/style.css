@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import "tailwindcss";
+@theme {
+	--font-bricolage-grotesque: "Bricolage Grotesque", sans-serif;
+	--font-apple-system: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--color-body-text: #45426e;
+	--color-primary: #3a30ba;
+	--color-hover: #12126e;
+	--spacing-5px: 0.313rem;
+	--spacing-7px: 0.438rem;
+	--spacing-25px: 1.563rem;
+	--spacing-27px: 1.688rem;
+	--spacing-30px: 1.875rem;
+	--radius-5px: 0.313rem;
+}
+@layer base {
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-[#17134a] font-bold font-bricolage-grotesque;
+	}
+	.h1,
+	h1 {
+		@apply text-[2.625rem] md:text-[4.5rem] leading-none -tracking-[0.094rem];
+	}
+}
+@layer utilities {
+	.container {
+		@apply sm:w-[46.875rem] md:w-[62.5rem] lg:w-[71.25rem] xl:w-[73.125rem]  mx-auto px-[0.938rem];
+	}
+}
+@layer components {
+	.btn {
+		@apply py-4 px-8 rounded-5px text-xl leading-normal font-normal transition delay-0 duration-300 ease-in cursor-pointer inline-flex gap-7px items-center;
+	}
+	.btn-primary {
+		@apply bg-primary text-white hover:bg-hover;
+	}
+}
