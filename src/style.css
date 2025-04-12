@@ -7,12 +7,20 @@
 	--color-body-text: #45426e;
 	--color-primary: #3a30ba;
 	--color-hover: #12126e;
+	--color-linear-base: linear-gradient(
+		130deg,
+		rgba(155, 144, 196, 0.1) 0%,
+		rgba(62, 67, 127, 0.2) 100%
+	);
 	--spacing-5px: 0.313rem;
 	--spacing-7px: 0.438rem;
+	--spacing-14px: 0.875rem;
 	--spacing-25px: 1.563rem;
 	--spacing-27px: 1.688rem;
 	--spacing-30px: 1.875rem;
+	--spacing-40px: 2.5rem;
 	--radius-5px: 0.313rem;
+	--radius-26px: 1.625rem;
 }
 @layer base {
 	.h1,
