@@ -7,18 +7,24 @@
 	--color-body-text: #45426e;
 	--color-primary: #3a30ba;
 	--color-hover: #12126e;
-	--color-linear-base: linear-gradient(
-		130deg,
-		rgba(155, 144, 196, 0.1) 0%,
-		rgba(62, 67, 127, 0.2) 100%
-	);
+	--color-floral-white: #fff9f3;
+	--color-bleach-white: #fcf2de;
+	--color-sapphire-10: #080a471a;
+	--linear-base: 130deg, rgba(155, 144, 196, 0.1) 0%,
+		rgba(62, 67, 127, 0.2) 100%;
 	--spacing-5px: 0.313rem;
 	--spacing-7px: 0.438rem;
+	--spacing-9px: 0.563rem;
 	--spacing-14px: 0.875rem;
+	--spacing-15px: 0.938rem;
+	--spacing-18px: 1.125rem;
 	--spacing-25px: 1.563rem;
 	--spacing-27px: 1.688rem;
 	--spacing-30px: 1.875rem;
-	--spacing-40px: 2.5rem;
+	--spacing-35px: 2.188rem;
+	--spacing-50px: 3.125rem;
+	--spacing-60px: 3.75rem;
+	--spacing-150px: 9.375rem;
 	--radius-5px: 0.313rem;
 	--radius-26px: 1.625rem;
 }
@@ -40,6 +46,14 @@
 	.h1,
 	h1 {
 		@apply text-[2.625rem] md:text-[4.5rem] leading-none -tracking-[0.094rem];
+	}
+	.h3,
+	h3 {
+		@apply text-[3.125rem] leading-none -tracking-[0.031rem];
+	}
+	.h6,
+	h6 {
+		@apply text-xl leading-[1.4] font-semibold font-apple-system;
 	}
 }
 @layer utilities {
