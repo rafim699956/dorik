@@ -10,6 +10,10 @@
 	--color-floral-white: #fff9f3;
 	--color-bleach-white: #fcf2de;
 	--color-sapphire-10: #080a471a;
+	--color-romance-70: #de238e12;
+	--color-black-squeeze: #f1faf7;
+	--color-black-pearl: #030521;
+	--color-blue-chalk: #eeebfa;
 	--linear-base: 130deg, rgba(155, 144, 196, 0.1) 0%,
 		rgba(62, 67, 127, 0.2) 100%;
 	--spacing-5px: 0.313rem;
@@ -24,6 +28,8 @@
 	--spacing-35px: 2.188rem;
 	--spacing-50px: 3.125rem;
 	--spacing-60px: 3.75rem;
+	--spacing-100px: 6.25rem;
+	--spacing-120px: 7.5rem;
 	--spacing-150px: 9.375rem;
 	--radius-5px: 0.313rem;
 	--radius-26px: 1.625rem;
@@ -46,6 +52,10 @@
 	.h1,
 	h1 {
 		@apply text-[2.625rem] md:text-[4.5rem] leading-none -tracking-[0.094rem];
+	}
+	.h2,
+	h2 {
+		@apply text-[3.75rem] leading-none -tracking-[0.063rem];
 	}
 	.h3,
 	h3 {
